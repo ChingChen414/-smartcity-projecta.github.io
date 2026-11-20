@@ -5,33 +5,35 @@ window.SITE_CONFIG = {
   hero: {
     profileImage: "assets/img/image1.jpg",
     courseTag: "SMRTTECH 4SC3",
-    tagline: "Smart Cities and Communities",
+    tagline: "Course Project: Smart Cities and Communities",
     studentName: "Ching Chen",
     program: "B.Tech. in Automation and Smart Systems",
     university: "McMaster University",
     email: "ching.chen@example.com"
   },
   disclaimer: {
-    short: "McMaster University coursework. Results describe a simulated Toronto intersection.",
+    short: "This McMaster University course project uses simulated traffic. The findings are for educational use and do not represent the City of Toronto.",
     long: "Each scenario uses one simulation run, one approach and assumed traffic demand. Extending the green for E61 costs the opposing movements nine seconds per cycle. Their delay would need to be measured before considering a field trial."
   },
-  theme: { heroBg: "#182d31", heroText: "#ffffff", pageBg: "#f7f8f5", accent: "#155c63" },
+  theme: { heroBg: "#232A33", heroText: "#ffffff", pageBg: "#f8fafc", accent: "#7c3aed" },
+  dividers: { dividerBg: "#f9f9f9", dividerText: "#ffffff" },
   footer: {
-    footerBg: "#182d31", footerText: "#ffffff", footerBorder: "#3a5255",
-    templateCredit: "Course showcase template by",
-    templateCreditLinkText: "RoadwayVR",
+    footerBg: "#111111", footerText: "#ffffff", footerBorder: "#222222",
+    homeLinkText: "RoadwayVR",
+    templateCredit: "This academic showcase template was developed by RoadwayVR.",
+    templateCreditLinkText: "Learn more at RoadwayVR.com",
     templateCreditUrl: "https://roadwayvr.com"
   },
   intro: {
-    projectTitleLabel: "Toronto, Ontario  /  Mini Project A",
-    projectTitle: "Kipling Avenue and Dixon Road",
+    projectTitleLabel: "Project Title",
+    projectTitle: "SUMO-Based Roadway Modelling and Speed–Density Assessment at Kipling Avenue and Dixon Road, Toronto",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "assets/img/image3.jpg",
     heroVideoAlt: "Traffic moving through junction J1. Yellow human-driven vehicles are followed by grey connected and autonomous vehicles.",
     videoCaption: "The same ten seconds at junction J1 play twice, first with yellow human-driven vehicles (HDVs), then with grey connected and autonomous vehicles (CAVs). Vehicle positions come from the two submitted SUMO models at simulation seconds 320–330."
   },
   caseStudy: {
-    title: "The study",
+    title: "Introduction",
     backgroundTitle: "Background",
     backgroundBullets: [
       "Kipling Avenue meets Dixon Road at a signalized Toronto intersection.",
@@ -39,14 +41,14 @@ window.SITE_CONFIG = {
       "The model represents 12 turning and through movements.",
       "We measured traffic on E61, the four-lane approach immediately upstream of the signal."
     ],
-    problemTitle: "Questions",
+    problemTitle: "Problem Statement",
     problemBullets: [
       "How fast do human drivers move as the approach fills?",
       "Does an entirely autonomous fleet change that relationship?",
       "What happens on E61 when its green phase lasts longer?",
       "Do those changes persist when intervals have similar densities?"
     ],
-    objectivesTitle: "Project objectives",
+    objectivesTitle: "Project Objectives",
     objectivesBullets: [
       "Locate the study intersection and select one incoming road segment.",
       "Build the roadway model and establish its human-driven baseline.",
@@ -55,7 +57,7 @@ window.SITE_CONFIG = {
     ]
   },
   overview: {
-    title: "How the model was built",
+    title: "Methodology",
     steps: [
       {title: "Locate the approach", text: "Trace the assigned road network and select the east-side approach into junction J1.", image: "assets/img/image2.jpg"},
       {title: "Establish the baseline", text: "Load human-driven traffic and run the original 60-second signal cycle.", image: "assets/img/image3.jpg"},
@@ -64,7 +66,7 @@ window.SITE_CONFIG = {
     ]
   },
   implementation: {
-    title: "Model details",
+    title: "Methodology Steps (Demo Modules)",
     modules: [
       {title: "Study area and edge selection", image: "assets/img/image2.jpg",
        alt: "Group 4’s aerial GIS overlay marks Kipling Avenue and Dixon Road with a ring.",
@@ -89,13 +91,13 @@ window.SITE_CONFIG = {
     ]
   },
   results: {
-    title: "What changed on E61?",
+    title: "Results & Potential Improvements",
     subtitle: "Each dot represents one 100-second interval in the first simulated hour. The axes match across the two plots. Density counts vehicles across all four lanes, and the dashed line shows a separate linear fit for each fleet.",
     charts: {
       left: {title: "Base scenario · Human-driven", src: "assets/img/image6.jpg", alt: "E61 HDV speed–density scatterplot. Speed declines as density rises; the linear fit has R² = 0.887."},
       right: {title: "Scenario 1 · Autonomous", src: "assets/img/image7.jpg", alt: "E61 CAV speed–density scatterplot on the same axes. The linear fit has R² = 0.861."}
     },
-    discussionTitle: "Reading the results",
+    discussionTitle: "Discussion",
     discussionBullets: [
       "Switching the fleet raised the mean interval speed by 0.014 m/s. Both fleets slowed as density rose, and the ordering varied across overlapping density ranges.",
       "Weighting by the time vehicles spent on E61 reverses the small speed difference. The HDV mean is 3.362 m/s and the CAV mean is 3.310 m/s.",
@@ -108,7 +110,8 @@ window.SITE_CONFIG = {
     ]
   },
   team: {
-    title: "Project credits",
+    title: "Team & Acknowledgments",
+    subtitle: "Group 4 · Mini Project A · McMaster University · Fall 2026",
     members: [{name:"Ching Chen",role:"Lab 5 showcase, simulation replay, results visualization and communication."}],
     acknowledgments: [
       "The roadway model, GIS and NETEDIT figures, and archived results are from Group 4’s Mini Project A, Report A.",

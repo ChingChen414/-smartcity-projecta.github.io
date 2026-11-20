@@ -1,181 +1,438 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>Kipling Avenue and Dixon Road | SMRTTECH 4SC3</title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<!-- Bootstrap 5 -->
+  <head>
+    <meta charset="utf-8">
+    <title>Kipling Avenue and Dixon Road | SMRTTECH 4SC3</title>
+    <meta name="description" content="Group 4 compares human-driven traffic, autonomous vehicles and a revised signal at Kipling Avenue and Dixon Road in Toronto.">
+    <meta name="theme-color" content="#232A33">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="styles.css" rel="stylesheet"/>
-<meta content="Group 4 compared human-driven vehicles, autonomous vehicles and a signal-timing change at Kipling Avenue and Dixon Road in Toronto." name="description"/><meta content="#182d31" name="theme-color"/></head>
-<body>
-<!-- HERO -->
+    <!-- Bootstrap 5, bundled locally for offline viewing. -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.8.min.css">
 
-<a class="skip" href="#study">Skip to study</a>
-<header class="sitebar" id="top"><div class="container nav-inner">
-<a class="brand" href="#top"><span id="courseTag">SMRTTECH 4SC3</span><span class="brand-detail" id="studioTagline">Smart Cities and Communities</span></a>
-<nav aria-label="Sections"><a href="#film">Video</a><a href="#methods">Methods</a><a href="#results">Results</a></nav>
-</div></header>
+    <link rel="stylesheet" href="styles.css?v=lab5-template">
+  </head>
 
-<main id="content">
-<!-- PROJECT TITLE + AUTOPLAY VIDEO -->
+  <body>
+    <a class="visually-hidden-focusable p-2" href="#study">Skip to study</a>
+    <!-- HERO -->
+    <header id="top" class="hero-banner text-center py-5">
+      <div class="container">
 
-<section class="hero"><div class="container hero-grid">
-<div class="hero-copy">
-<p class="eyebrow" id="projectTitleLabel">Toronto, Ontario / Mini Project A</p>
-<h1 id="projectTitleText">Kipling Avenue and Dixon Road</h1>
-<p class="lead">Would an all-autonomous fleet move faster through this signal? We compared it with human drivers, then tested what nine extra seconds of green would do for one approach.</p>
-<a class="primary" href="#results">Explore the results</a>
-<div class="byline"><strong id="studentNameLine">Ching Chen</strong><span id="studentAffilLine"></span></div>
-</div>
-<figure class="hero-figure"><img alt="Aerial view of the study junction at Kipling Avenue and Dixon Road, marked J1." height="800" id="profileImg" src="assets/img/image1.jpg" width="1300"/>
-<figcaption><span>Study intersection</span><span>Toronto, Ontario</span></figcaption></figure>
-</div></section>
-<section class="band" id="film"><div class="container film-grid">
-<div class="film-caption"><p class="eyebrow">Simulation replay</p><h2>Traffic through junction J1</h2>
-<p id="introCaption"></p><a class="textlink" download="" href="assets/video/video.mp4">Download the video</a></div>
-<video aria-label="SUMO replay of HDV and CAV traffic through junction J1" controls="" id="introHeroVideo" playsinline="" preload="metadata"><source id="introHeroSource" src="assets/video/video.mp4" type="video/mp4"/>Download the MP4 using the video link.</video>
-</div></section>
+        <!-- SMRTTECH 4SC3 tag -->
+        <div class="mb-1">
+          <span
+            class="hero-course-tag"
+            id="courseTag">
+            SMRTTECH 4SC3
+          </span>
+        </div>
 
-<!-- INTRODUCTION (3 CARDS) -->
+        <!-- Course Project pill -->
+        <div class="hero-tagline" id="studioTagline">
+          Course Project: Smart Cities and Communities
+        </div>
 
-<section class="band study" id="study">
-<div class="container">
-<h2 class="section-title h3 text-center mb-4" id="caseTitle">The study</h2>
-<div class="row g-4">
-<div class="col-lg-4">
-<div class="card card-soft h-100">
-<div class="card-body">
-<h3 class="h5 mb-2" id="backgroundTitle">Background</h3>
-<ul class="mb-0" id="backgroundList"></ul>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="card card-soft h-100">
-<div class="card-body">
-<h3 class="h5 mb-2" id="problemTitle">Questions</h3>
-<ul class="mb-0" id="problemList"></ul>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="card card-soft h-100">
-<div class="card-body">
-<h3 class="h5 mb-2" id="objectivesTitle">Project objectives</h3>
-<ul class="mb-0" id="objectivesList"></ul><p class="communication"><strong>Communication objective</strong> Present the project’s methods and findings through a web showcase.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- PIPELINE OVERVIEW -->
+        <img
+          src="assets/img/image1.jpg"
+          alt="Aerial view of the study intersection at Kipling Avenue and Dixon Road, Toronto"
+          class="hero-photo"
+          id="profileImg">
 
-<section class="band methods" id="methods">
-<div class="container">
-<h2 class="section-title h3 text-center mb-2" id="overviewTitle">How the model was built</h2>
-<p class="text-center text-muted mb-5 section-subtitle" id="overviewSubtitle" style="display:none;"></p>
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 justify-content-center" id="stepsRow">
-</div>
-</div>
-</section>
-<!-- IMPLEMENTATION MODULES -->
+        <p class="mb-1 fw-semibold" id="studentNameLine">
+          Ching Chen
+        </p>
 
-<section class="band method-details" id="details">
-<div class="container">
-<h2 class="section-title h3 text-center mb-2" id="implTitle">Model details</h2>
-<p class="text-center text-muted mb-5 section-subtitle" id="implSubtitle" style="display:none;"></p>
-<div id="modulesContainer"></div>
-</div>
-</section>
-<!-- RESULTS -->
+        <p class="mb-2 small text-uppercase text-white" id="studentAffilLine">
+          B.Tech. in Automation and Smart Systems, McMaster University
+        </p>
 
-<section class="band results" id="results">
-<div class="container">
-<h2 class="section-title h3 text-center mb-2" id="resultsTitle">What changed on E61?</h2>
-<p class="text-center text-muted mb-4 section-subtitle" id="resultsSubtitle"></p>
-<div class="tablewrap"><table class="metrics"><caption>Common one-hour window on edge E61</caption>
-<thead><tr><th scope="col">Scenario</th><th scope="col">Mean interval speed <span>(m/s)</span></th><th scope="col">Mean edge density <span>(veh/km)</span></th><th scope="col">Vehicle-time-weighted speed <span>(m/s)</span></th></tr></thead><tbody id="summaryRows"></tbody></table></div>
+        <p class="mb-0 small">
+          <a
+            class="text-white text-decoration-underline"
+            id="emailLink"
+            href="mailto:ching.chen@example.com">
+            ching.chen@example.com
+          </a>
+        </p>
 
-<!-- CHARTS -->
-<div class="row g-4 mt-4">
-<div class="col-lg-6">
-<div class="card card-soft h-100">
-<div class="card-body">
-<h3 class="h6 fw-bold mb-3" id="chartLeftTitle">Base scenario · Human-driven</h3>
-<a aria-label="Open full-size human-driven speed–density plot" class="chart-link" href="assets/img/image6.jpg" rel="noopener" target="_blank"><img alt="" class="img-fluid rounded" id="chartLeftImg" src="assets/img/image6.jpg"/></a>
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="card card-soft h-100">
-<div class="card-body">
-<h3 class="h6 fw-bold mb-3" id="chartRightTitle">Scenario 1 · Autonomous</h3>
-<a aria-label="Open full-size autonomous speed–density plot" class="chart-link" href="assets/img/image7.jpg" rel="noopener" target="_blank"><img alt="" class="img-fluid rounded" id="chartRightImg" src="assets/img/image7.jpg"/></a>
-</div>
-</div>
-</div>
-</div>
-<!-- DISCUSSION -->
-<div class="row g-4 mt-3">
-<div class="col-lg-12">
-<div class="card card-soft">
-<div class="card-body">
-<h3 class="h5 mb-2" id="discussionTitle">Reading the results</h3>
-<ul class="mb-0" id="discussionList"></ul>
-<p class="kpi-note mt-3 mb-0" id="disclaimerLong">
-</p><a class="textlink" download="" href="assets/data/E61_speed_density.csv">Download the 108 interval measurements (CSV)</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- TEAM -->
+        <div class="notice">
+          <div class="notice-title" id="noticeTitle">
+            Academic Disclaimer
+          </div>
 
-<section class="band credit-band" id="credits">
-<div class="container">
-<h2 class="section-title h3 text-center mb-2" id="teamTitle">Project credits</h2>
-<p class="text-center text-muted mb-4 section-subtitle" id="teamSubtitle"></p>
-<div class="row g-4">
-<div class="col-lg-6">
-<div class="card card-soft h-100">
-<div class="card-body">
-<h3 class="h6 fw-bold mb-2">Lab author</h3>
-<ul class="mb-0" id="teamList"></ul>
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="card card-soft h-100">
-<div class="card-body">
-<h3 class="h6 fw-bold mb-2">Source material</h3>
-<ul class="mb-3" id="ackList"></ul>
-<div class="d-flex flex-column flex-md-row gap-2 align-items-md-center justify-content-between">
-<div class="text-muted small" id="repoLabel">Project source</div>
-<a class="btn btn-sm btn-outline-primary" href="https://github.com/ChingChen414/-smartcity-projecta.github.io" id="repoLink" rel="noopener noreferrer" target="_blank">Open project repository</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- FOOTER -->
+          <p class="notice-text" id="noticeText">
+            This McMaster University course project uses simulated traffic. The findings are for educational use and do not represent the City of Toronto.
+          </p>
+        </div>
+      </div>
+    </header>
 
-<footer><div class="container foot"><div><strong>SMRTTECH 4SC3 · Fall 2026</strong>
-<p id="footerDisclaimer"></p><p><span id="templateCredit"></span> <a href="https://roadwayvr.com" id="templateCreditLink">RoadwayVR</a>.</p></div>
-<div><span class="foot-label">Lab contact</span><a href="mailto:ching.chen@example.com" id="footerEmail">ching.chen@example.com</a></div></div></footer>
+    <main id="content">
+      <!-- PROJECT TITLE + AUTOPLAY VIDEO -->
+      <section id="film" class="py-3 text-center bg-white">
+        <div class="container">
+          <div
+            class="text-muted small text-uppercase mb-4"
+            id="projectTitleLabel">
+            Project Title
+          </div>
 
-<!-- Bootstrap JS -->
+          <h1 class="section-title h2 mb-3" id="projectTitleText">
+            SUMO-Based Roadway Modelling and Speed–Density Assessment at Kipling Avenue and Dixon Road, Toronto
+          </h1>
 
-<!-- Config -->
-<script src="config.js"></script>
-<!-- Apply config -->
-<script>
+          <div class="intro-video-wrap">
+            <video
+              id="introHeroVideo"
+              class="intro-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+              poster="assets/img/image3.jpg"
+              preload="metadata"
+              aria-label="Traffic moving through junction J1. Yellow human-driven vehicles are followed by grey connected and autonomous vehicles.">
+
+              <source
+                id="introHeroSource"
+                src="assets/video/video.mp4"
+                type="video/mp4">
+
+              Your browser does not support the video tag.
+            </video>
+
+            <div class="intro-badge">
+              Academic Demo
+            </div>
+          </div>
+
+          <p class="mt-3 mb-0 text-muted small" id="introCaption">
+            The same ten seconds at junction J1 play twice, first with yellow human-driven vehicles (HDVs), then with grey connected and autonomous vehicles (CAVs). Vehicle positions come from the two submitted SUMO models at simulation seconds 320–330.
+          </p>
+          <p class="mt-1 mb-0 small"><a id="videoDownload" href="assets/video/video.mp4" download>Download the video</a></p>
+        </div>
+      </section>
+
+      <!-- INTRODUCTION (3 CARDS) -->
+      <div class="star-divider" aria-hidden="true">*</div>
+
+      <section id="study" class="py-5 bg-white">
+        <div class="container">
+          <h2 class="section-title h3 text-center mb-4" id="caseTitle">
+            Introduction
+          </h2>
+
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="card card-soft h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-2" id="backgroundTitle">
+                    Background
+                  </h3>
+
+                  <ul class="mb-0" id="backgroundList"></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card card-soft h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-2" id="problemTitle">
+                    Problem Statement
+                  </h3>
+
+                  <ul class="mb-0" id="problemList"></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card card-soft h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-2" id="objectivesTitle">
+                    Project Objectives
+                  </h3>
+
+                  <ul class="mb-0" id="objectivesList"></ul>
+                  <p class="small mt-3 mb-0"><strong>Communication objective</strong><br>
+                    Present the project’s methods and findings through a web showcase.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PIPELINE OVERVIEW -->
+      <div class="star-divider" aria-hidden="true">*</div>
+
+      <section id="methods" class="py-5 bg-white">
+        <div class="container">
+          <h2 class="section-title h3 text-center mb-2" id="overviewTitle">
+            Methodology
+          </h2>
+
+          <p
+            class="text-center text-muted mb-5 section-subtitle"
+            id="overviewSubtitle"
+            style="display:none;">
+          </p>
+
+          <div
+            id="stepsRow"
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-4 gx-xl-5 gy-5 justify-content-center">
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPLEMENTATION MODULES -->
+      <div class="star-divider" aria-hidden="true">*</div>
+
+      <section id="details" class="py-5 bg-white">
+        <div class="container">
+          <h2 class="section-title h3 text-center mb-2" id="implTitle">
+            Methodology Steps (Demo Modules)
+          </h2>
+
+          <p
+            class="text-center text-muted mb-5 section-subtitle"
+            id="implSubtitle"
+            style="display:none;">
+          </p>
+
+          <div id="modulesContainer"></div>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <div class="star-divider" aria-hidden="true">*</div>
+
+      <section id="results" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="section-title h3 text-center mb-2" id="resultsTitle">
+            Results &amp; Potential Improvements
+          </h2>
+
+          <p
+            class="text-center text-muted mb-4 section-subtitle"
+            id="resultsSubtitle">
+          </p>
+
+          <!-- CHARTS -->
+          <div class="row g-4 mt-4">
+            <div class="col-lg-6">
+              <div class="card card-soft h-100">
+                <div class="card-body">
+                  <h3 class="h6 fw-bold mb-3" id="chartLeftTitle">
+                    Base scenario · Human-driven
+                  </h3>
+
+                  <a class="figure-link" href="assets/img/image6.jpg" target="_blank" rel="noopener">
+                    <img id="chartLeftImg" class="img-fluid rounded"
+                      src="assets/img/image6.jpg" width="1300" height="800"
+                      alt="Base scenario · Human-driven speed–density plot for E61">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card card-soft h-100">
+                <div class="card-body">
+                  <h3 class="h6 fw-bold mb-3" id="chartRightTitle">
+                    Scenario 1 · Autonomous
+                  </h3>
+
+                  <a class="figure-link" href="assets/img/image7.jpg" target="_blank" rel="noopener">
+                    <img id="chartRightImg" class="img-fluid rounded"
+                      src="assets/img/image7.jpg" width="1300" height="800"
+                      alt="Scenario 1 · Autonomous speed–density plot for E61">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DISCUSSION -->
+          <div class="row g-4 mt-3">
+            <div class="col-lg-12">
+              <div class="card card-soft">
+                <div class="card-body">
+                  <h3 class="h5 mb-2" id="discussionTitle">
+                    Discussion
+                  </h3>
+
+                  <ul class="mb-0" id="discussionList"></ul>
+
+                  <p
+                    class="kpi-note mt-3 mb-0"
+                    id="disclaimerLong">
+                  </p>
+
+                  <div class="table-responsive mt-3" role="region" aria-label="Scenario measurements for E61" tabindex="0">
+                    <table class="table table-sm kpi-table caption-top align-middle">
+                      <caption>Common one-hour window on edge E61</caption>
+                      <thead>
+                        <tr>
+                          <th scope="col">Scenario</th>
+                          <th scope="col">Mean interval speed (m/s)</th>
+                          <th scope="col">Mean edge density (veh/km)</th>
+                          <th scope="col">Vehicle-time-weighted speed (m/s)</th>
+                        </tr>
+                      </thead>
+                      <tbody id="summaryRows"></tbody>
+                    </table>
+                  </div>
+                  <a class="small" href="assets/data/E61_speed_density.csv" download>Download the 108 interval measurements (CSV)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <div class="star-divider" aria-hidden="true">*</div>
+
+      <section id="credits" class="py-5 bg-white">
+        <div class="container">
+          <h2 class="section-title h3 text-center mb-2" id="teamTitle">
+            Team & Acknowledgments
+          </h2>
+
+          <p
+            class="text-center text-muted mb-4 section-subtitle"
+            id="teamSubtitle">
+          </p>
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="card card-soft h-100">
+                <div class="card-body">
+                  <h3 class="h6 fw-bold mb-2">
+                    Team
+                  </h3>
+
+                  <ul class="mb-0" id="teamList"></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card card-soft h-100">
+                <div class="card-body">
+                  <h3 class="h6 fw-bold mb-2">
+                    Acknowledgments
+                  </h3>
+
+                  <ul class="mb-3" id="ackList"></ul>
+
+                  <div class="d-flex flex-column flex-md-row gap-2 align-items-md-center justify-content-between">
+                    <div class="text-muted small" id="repoLabel">
+                      Project Repository
+                    </div>
+
+                    <a
+                      class="btn btn-sm btn-outline-primary"
+                      id="repoLink"
+                      href="https://github.com/ChingChen414/-smartcity-projecta.github.io"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      Open Repository
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-5">
+      <div class="container small">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="footer-title">
+              Academic Disclaimer
+            </div>
+
+            <div
+              class="footer-disclaimer"
+              id="footerDisclaimer">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer-title">
+              Links
+            </div>
+
+            <a
+              href="https://roadwayvr.com"
+              id="footerHome"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer">
+              RoadwayVR
+            </a>
+
+            <a
+              id="footerRepo"
+              href="https://github.com/ChingChen414/-smartcity-projecta.github.io"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer">
+              GitHub repository
+            </a>
+            <nav class="d-flex gap-3 mt-2" aria-label="Sections">
+              <a class="footer-link" href="#film">Video</a>
+              <a class="footer-link" href="#methods">Methods</a>
+              <a class="footer-link" href="#results">Results</a>
+            </nav>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer-title">
+              Contact
+            </div>
+
+            <a
+              href="mailto:ching.chen@example.com"
+              id="footerEmail"
+              class="footer-link">
+              ching.chen@example.com
+            </a>
+          </div>
+        </div>
+
+        <!-- RoadwayVR template attribution -->
+        <div class="template-credit">
+          <span id="templateCredit">
+            This academic showcase template was developed by RoadwayVR.
+          </span>
+
+          <a
+            id="templateCreditLink"
+            href="https://roadwayvr.com"
+            target="_blank"
+            rel="noopener noreferrer">
+            Learn more at RoadwayVR.com
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Config -->
+    <script src="config.js?v=lab5-template"></script>
+
+    <!-- Apply config -->
+    <script>
       const C = window.SITE_CONFIG || {};
 
       // Theme vars
@@ -307,7 +564,7 @@
 
       // Hero
       if (C.hero) {
-        // course tag (RWR 4013)
+        // course tag (SMRTTECH 4SC3)
         const ct = el("courseTag");
         const tagText = (C.hero.courseTag || "").trim();
 
@@ -323,7 +580,7 @@
         setText(
           "studioTagline",
           C.hero.tagline ||
-          "Course Project: Digital Twins for Smart Cities"
+          "Course Project: Smart Cities and Communities"
         );
 
         setText(
@@ -418,6 +675,8 @@
             );
           }
 
+          el("videoDownload").href = s.getAttribute("src");
+          v.autoplay = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
           v.load();
         }
       }
@@ -478,12 +737,23 @@
           stepsRow &&
           Array.isArray(C.overview.steps)
         ) {
-          stepsRow.innerHTML = C.overview.steps.slice(0, 4).map((step, i) => `
-            <article class="method-card">
-              <a href="#module-${i+1}"><img src="${step.image}" alt="" width="1300" height="800" loading="lazy">
-              <h3>${step.title}</h3></a>
-              <p>${step.text}</p>
-            </article>`).join("");
+          stepsRow.innerHTML = C.overview.steps
+            .slice(0, 4)
+            .map((step, i) => `
+              <div class="col">
+                <div class="text-center h-100 px-2">
+                  <a class="step-link" href="#module-${i + 1}">
+                    <img src="${step.image || ""}" alt="" class="circle-img">
+                    <h3 class="tutorial-title mt-2 mb-1">Step ${i + 1}. ${step.title || ""}</h3>
+                  </a>
+
+                  <p class="tutorial-text text-muted mb-0">
+                    ${step.text || ""}
+                  </p>
+                </div>
+              </div>
+            `)
+            .join("");
         }
       }
 
@@ -509,22 +779,46 @@
           : [];
 
         if (wrap) {
-          wrap.innerHTML = modules.map((m,i) => `
-            <details id="module-${i+1}" ${i===0 ? "open" : ""}>
-              <summary>${m.title}</summary>
-              <div class="module-body">
-                <ul>${m.bullets.map(b => `<li>${b.text}</li>`).join("")}</ul>
-                <a href="${m.image}" target="_blank" rel="noopener" aria-label="Open full-size figure for ${m.title}">
-                  <img src="${m.image}" alt="${m.alt}" width="1300" height="800" loading="lazy">
-                </a>
-              </div>
-            </details>`).join("");
-          const showModule = () => {
-            const id = window.location.hash.slice(1);
-            if (/^module-[1-4]$/.test(id)) document.getElementById(id).open = true;
-          };
-          window.addEventListener("hashchange", showModule);
-          showModule();
+          wrap.innerHTML = modules
+            .map((m, i) => {
+              const bullets = Array.isArray(m.bullets)
+                ? m.bullets
+                : [];
+
+              const bulletHtml = bullets
+                .map((b) => `<li>${b.text || ""}</li>`)
+                .join("");
+
+              const textColOrder =
+                i % 2 === 1 ? "order-lg-2" : "";
+
+              const imgColOrder =
+                i % 2 === 1 ? "order-lg-1" : "";
+
+              return `
+                <div id="module-${i + 1}" class="row gy-4 mb-5">
+                  <div class="col-lg-6 ${textColOrder} tutorial-text-col">
+                    <div>
+                      <h3 class="h4 mb-2">
+                        Module ${i + 1}. ${m.title || ""}
+                      </h3>
+
+                      <ul class="check-list">
+                        ${bulletHtml}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 ${imgColOrder}">
+                    <a class="figure-link" href="${m.image}" target="_blank" rel="noopener">
+                      <img src="${m.image}" alt="${m.alt || m.title || ""}"
+                        class="img-fluid tutorial-large-img" width="1300" height="800">
+                    </a>
+                  </div>
+                </div>
+              `;
+            })
+            .join("");
         }
       }
 
@@ -545,21 +839,30 @@
           C.results.discussionTitle || "Discussion"
         );
 
-        el("summaryRows").innerHTML = C.results.summary.map(row =>
-          `<tr><th scope="row">${row[0]}</th>${row.slice(1).map(value => `<td>${value}</td>`).join("")}</tr>`
-        ).join("");
+        const tbody = el("summaryRows");
+        for (const values of C.results.summary || []) {
+          const row = tbody.insertRow();
+          const scenario = document.createElement("th");
+          scenario.scope = "row";
+          scenario.textContent = values[0];
+          row.append(scenario);
+          for (const value of values.slice(1)) {
+            row.insertCell().textContent = value;
+          }
+        }
+
         if (C.results.charts) {
           const L = C.results.charts.left || {};
           const R = C.results.charts.right || {};
 
           setText(
             "chartLeftTitle",
-            L.title || "Average Delay per Approach"
+            L.title || "Base scenario · Human-driven"
           );
 
           setText(
             "chartRightTitle",
-            R.title || "Average Delay (Overall)"
+            R.title || "Scenario 1 · Autonomous"
           );
 
           const li = el("chartLeftImg");
@@ -567,6 +870,7 @@
           if (li && L.src) {
             li.src = L.src;
             li.alt = L.alt || "";
+            li.parentElement.href = L.src;
           }
 
           const ri = el("chartRightImg");
@@ -574,6 +878,7 @@
           if (ri && R.src) {
             ri.src = R.src;
             ri.alt = R.alt || "";
+            ri.parentElement.href = R.src;
           }
         }
 
@@ -621,15 +926,10 @@
         const repoLink = el("repoLink");
 
         if (repoLink) {
-          if (location.hostname.endsWith(".github.io")) {
-            const owner = location.hostname.split(".")[0];
-            const repo = location.pathname.split("/").filter(Boolean)[0] || location.hostname;
-            repoLink.href = "https://github.com/" + owner + "/" + repo;
-          } else {
-            repoLink.href = C.team.repoUrl;
-          }
+          repoLink.href = C.team.repoUrl || "#";
+          el("footerRepo").href = repoLink.href;
         }
       }
     </script>
-</body>
+  </body>
 </html>
