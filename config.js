@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
     courseTag: "SMRTTECH 4SC3",
     tagline: "Course Project: Smart Cities and Communities",
     studentName: "Ching Chen",
-    program: "B.Tech. in Automation and Smart Systems",
+    program: "Automation Systems Engineering Technology",
     university: "McMaster University",
     email: "chenc232@mcmaster.ca"
   },
