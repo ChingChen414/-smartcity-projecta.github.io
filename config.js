@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
     studentName: "Ching Chen",
     program: "B.Tech. in Automation and Smart Systems",
     university: "McMaster University",
-    email: "ching.chen@example.com"
+    email: "chenc232@mcmaster.ca"
   },
   disclaimer: {
     short: "This McMaster University course project uses simulated traffic. The findings are for educational use and do not represent the City of Toronto.",
